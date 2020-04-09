@@ -1,8 +1,12 @@
 <template>
-    <div>
-        <h1>Detailed person information view</h1>
-        <person-detailed-info-card/>
-    </div>
+    <v-container>
+        <v-row>
+            <h1 class='display-3'>Detailed person information view</h1>
+        </v-row>
+        <v-row>
+            <person-detailed-info-card/>
+        </v-row>
+    </v-container>
 </template>
 
 <script>
