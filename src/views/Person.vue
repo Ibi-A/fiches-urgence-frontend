@@ -5,10 +5,8 @@
     </div>
 </template>
 
-
 <script>
 import PersonDetailedInfoCard from '../components/PersonDetailedInfoCard.vue'
-
 
 export default {
     name: 'person',
