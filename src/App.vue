@@ -41,7 +41,6 @@
     </v-navigation-drawer>
 
     <v-app-bar app class="gradient" dark>
-      
       <v-toolbar-title>Mes fiches d'urgence</v-toolbar-title>
       <v-spacer></v-spacer>
     </v-app-bar>
@@ -49,7 +48,6 @@
     <v-content>
       <router-view />
     </v-content>
-
   </v-app>
 </template>
 
