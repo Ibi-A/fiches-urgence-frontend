@@ -1,7 +1,7 @@
 <template>
-  <v-col xs="2" lg="3">
-    <v-card max-width="500">
-      <v-card-title>John Doe</v-card-title>
+  <v-col lg="3" sm="6" xs="12">
+    <v-card class="pa-auto">
+      <v-card-title>John Does</v-card-title>
       <v-card-subtitle>221B Baker Street</v-card-subtitle>
       <v-card-text>
         <strong>Phone numbers</strong>
