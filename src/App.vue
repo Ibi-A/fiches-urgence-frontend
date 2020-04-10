@@ -2,7 +2,7 @@
   <v-app>
     <v-navigation-drawer app>
       <v-list dense>
-        <v-list-item link>
+        <v-list-item link to='/'>
           <v-list-item-content>
             <v-list-item-title>Home</v-list-item-title>
           </v-list-item-content>
@@ -14,26 +14,26 @@
           </v-list-item-content>
         </v-list-item>
         
-        <v-list-item link>
+        <v-list-item link to='/residents'>
           <v-list-item-content>
             <v-list-item-title>Residents</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
         
 
-        <v-list-item link>
+        <v-list-item link to='/contributors'>
           <v-list-item-content>
             <v-list-item-title>Contributors</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item link>
+        <v-list-item link to='/health-mutuals'>
           <v-list-item-content>
             <v-list-item-title>Health mutuals</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item link>
+        <v-list-item link to='/cities'>
           <v-list-item-content>
             <v-list-item-title>Cities</v-list-item-title>
           </v-list-item-content>
