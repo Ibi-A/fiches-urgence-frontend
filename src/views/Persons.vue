@@ -22,9 +22,10 @@
       <person-info-card />
       <person-info-card />
       <person-info-card />
+      <v-btn fixed dark fab bottom right color="primary">
+        <v-icon>mdi-plus</v-icon>
+      </v-btn>
     </v-row>
-
-    
   </v-container>
 </template>
 
