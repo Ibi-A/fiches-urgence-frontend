@@ -1,23 +1,29 @@
 <template>
   <v-form v-model="valid">
+    <h1>{{ personId }}</h1>
     <v-text-field
-      v-model="firstname"
-      :rules="nameRules"
-      :counter="10"
       label="Prénom(s)"
       required
-    >John</v-text-field>
-    <v-text-field v-model="lastname" :rules="nameRules" :counter="10" label="Nom de famille" required>Doe</v-text-field>
+    ></v-text-field>
+    <v-text-field label="Nom de famille" required></v-text-field>
     <v-textarea
-      name="input-7-1"
       label="Adresse"
-      value="Château de Moulinsart"
-      hint="Hint text"
+      v-bind:value="personId"
     ></v-textarea>
     <v-item-group>
-      <v-btn color='success' to='/persons/person-id'>Enregistrer</v-btn>
+      <v-btn color='success' to='/persons/person-id'>{{personId}}</v-btn>
       <v-btn color='warning' to='/persons/person-id'>Annuler</v-btn>
       <v-btn color='error' to='/persons/person-id'>Supprimer</v-btn>
     </v-item-group>
   </v-form>
 </template>
+
+
+<script>
+export default {
+  name: 'person-edition-form',
+  props: {
+    personId: String
+  }
+}
+</script>

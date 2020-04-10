@@ -1,8 +1,8 @@
 <template>
   <v-col xs="12" sm="12" md="6" lg="4" xl="3">
     <v-card hover @click="switchPage()">
-      <v-card-title class="teal--text">John Doe</v-card-title>
-      <v-card-subtitle>221B Baker Street</v-card-subtitle>
+      <v-card-title class="teal--text">{{ person['firstName'] }} {{ person['lastName'] }}</v-card-title>
+      <v-card-subtitle>{{ person['address'] }}</v-card-subtitle>
       <v-card-text>
         <strong>Numéros de téléphone</strong>
         <ul>
@@ -20,9 +20,15 @@ import router from '../router/index.js'
 
 export default {
   name: 'person-info-card',
+  props: {
+    'person': Object
+  },
   methods: {
     switchPage: function() {
-      router.replace('/persons/person-id')
+      console.log('##############################')
+      console.log(this.person['id'])
+      console.log('##############################')
+      router.replace('/persons/' + this.person['id'])
     }
   }
 }
