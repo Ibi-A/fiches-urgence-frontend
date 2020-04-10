@@ -55,7 +55,7 @@
       <router-view/>
     </v-content>
 
-    <v-footer app color='deep-purple lighten-2' dark>
+    <v-footer app absolute color='deep-purple lighten-2' dark>
       2020 - Fiches d'urgence Manager - Footer
     </v-footer>
   </v-app>
