@@ -1,20 +1,29 @@
 <template>
-  <v-col lg="3" sm="6" xs="12">
-    <v-card class="pa-auto" hover>
+  <v-col xs="12" sm="12" md="6" lg="4" xl="3">
+    <v-card hover @click="switchPage()">
       <v-card-title class="teal--text">John Doe</v-card-title>
       <v-card-subtitle>221B Baker Street</v-card-subtitle>
       <v-card-text>
-        <strong>Phone numbers</strong>
+        <strong>Numéros de téléphone</strong>
         <ul>
-          <li>+33 6.06.06.06.06</li>
-          <li>+33 6.01.02.03.04</li>
+          <li>(+33) 06.06.06.06.06</li>
+          <li>(+33) 06.01.02.03.04</li>
         </ul>
       </v-card-text>
-
-      <!-- <v-card-actions>
-        <v-btn color="grey" to="/persons/person-id" outlined>Edit</v-btn>
-        <v-btn color="grey" outlined>Delete</v-btn>
-      </v-card-actions> -->
     </v-card>
   </v-col>
 </template>
+
+
+<script>
+import router from '../router/index.js'
+
+export default {
+  name: 'person-info-card',
+  methods: {
+    switchPage: function() {
+      router.replace('/persons/person-id')
+    }
+  }
+}
+</script>

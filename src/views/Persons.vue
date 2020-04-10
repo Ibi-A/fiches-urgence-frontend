@@ -1,7 +1,7 @@
 <template>
   <v-container class="pa-12">
     <v-row class="mb-6">
-      <h1 class="display-3 mx-3"> Persons view</h1>
+      <h1 class="display-3 mx-3">Toutes les personnes</h1>
     </v-row>
     <v-row>
       <person-info-card />

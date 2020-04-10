@@ -4,37 +4,37 @@
       <v-list dense>
         <v-list-item link to="/">
           <v-list-item-content>
-            <v-list-item-title>Home</v-list-item-title>
+            <v-list-item-title>Accueil</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
         <v-list-item link to="/persons">
           <v-list-item-content>
-            <v-list-item-title>Persons</v-list-item-title>
+            <v-list-item-title>Personnes</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
         <v-list-item link to="/residents">
           <v-list-item-content>
-            <v-list-item-title>Residents</v-list-item-title>
+            <v-list-item-title>Résidents</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
         <v-list-item link to="/contributors">
           <v-list-item-content>
-            <v-list-item-title>Contributors</v-list-item-title>
+            <v-list-item-title>Intervenants</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
         <v-list-item link to="/health-mutuals">
           <v-list-item-content>
-            <v-list-item-title>Health mutuals</v-list-item-title>
+            <v-list-item-title>Mutuelles</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
         <v-list-item link to="/cities">
           <v-list-item-content>
-            <v-list-item-title>Cities</v-list-item-title>
+            <v-list-item-title>Villes</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>
@@ -42,7 +42,7 @@
 
     <v-app-bar app class="gradient" dark>
       <v-toolbar-title>
-        <strong>Fiches d'urgence Manager</strong>
+        <strong>Mes fiches d'urgence</strong>
       </v-toolbar-title>
       <v-spacer></v-spacer>
     </v-app-bar>
@@ -51,7 +51,6 @@
       <router-view />
     </v-content>
 
-    <!-- <v-footer app absolute class="teal--text text-center">2020 - Fiches d'urgence Manager - Footer</v-footer> -->
   </v-app>
 </template>
 
@@ -60,6 +59,7 @@ export default {
   name: "App"
 };
 </script>
+
 <style scoped>
 .gradient {
   background: rgb(0, 150, 136);
