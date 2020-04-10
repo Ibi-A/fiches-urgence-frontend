@@ -1,21 +1,32 @@
 <template>
-    <v-container class="lighten-2">
+    <v-container class="pa-12">
         <v-row>
             <h1 class='display-3'>Persons view</h1>
         </v-row>
+        
         <v-row>
-            <persons-list/>
+            <person-info-card/>
+            <person-info-card/>
+            <person-info-card/>
+            <person-info-card/>
+            <person-info-card/>
+            <person-info-card/>
+            <person-info-card/>
+            <person-info-card/>
+            <person-info-card/>
+            <person-info-card/>
+            <person-info-card/>
         </v-row>
     </v-container>
 </template>
 
 <script>
-import PersonsList from "../components/PersonsList.vue";
+import PersonInfoCard from '../components/PersonInfoCard.vue'
 
 export default {
     name: 'persons',
     components: {
-        PersonsList
+        PersonInfoCard
     }
 }
 </script>

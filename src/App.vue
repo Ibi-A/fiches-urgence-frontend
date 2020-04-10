@@ -1,5 +1,47 @@
 <template>
   <v-app>
+    <v-navigation-drawer app>
+      <v-list dense>
+        <v-list-item link>
+          <v-list-item-content>
+            <v-list-item-title>Home</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item link to='/persons'>
+          <v-list-item-content>
+            <v-list-item-title>Persons</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        
+        <v-list-item link>
+          <v-list-item-content>
+            <v-list-item-title>Residents</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        
+
+        <v-list-item link>
+          <v-list-item-content>
+            <v-list-item-title>Contributors</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item link>
+          <v-list-item-content>
+            <v-list-item-title>Health mutuals</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item link>
+          <v-list-item-content>
+            <v-list-item-title>Cities</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+    </v-navigation-drawer>
+
+
     <v-app-bar
       app
       color="deep-purple"
@@ -13,7 +55,7 @@
       <router-view/>
     </v-content>
 
-    <v-footer color='deep-purple lighten-2' dark>
+    <v-footer app color='deep-purple lighten-2' dark>
       2020 - Fiches d'urgence Manager - Footer
     </v-footer>
   </v-app>
