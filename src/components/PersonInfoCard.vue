@@ -1,7 +1,7 @@
 <template>
   <v-col lg="3" sm="6" xs="12">
-    <v-card class="pa-auto">
-      <v-card-title>John Does</v-card-title>
+    <v-card class="pa-auto" hover>
+      <v-card-title class="teal--text">John Doe</v-card-title>
       <v-card-subtitle>221B Baker Street</v-card-subtitle>
       <v-card-text>
         <strong>Phone numbers</strong>
@@ -11,10 +11,10 @@
         </ul>
       </v-card-text>
 
-      <v-card-actions>
-        <v-btn color="primary" to="/persons/person-id">Edit</v-btn>
-        <v-btn color="error">Delete</v-btn>
-      </v-card-actions>
+      <!-- <v-card-actions>
+        <v-btn color="grey" to="/persons/person-id" outlined>Edit</v-btn>
+        <v-btn color="grey" outlined>Delete</v-btn>
+      </v-card-actions> -->
     </v-card>
   </v-col>
 </template>

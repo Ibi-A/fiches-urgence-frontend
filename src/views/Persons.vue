@@ -19,7 +19,7 @@
 
     </v-row>
 
-    <v-btn class="ma-5" fixed dark fab bottom right color="primary">
+    <v-btn class="ma-5" fixed dark fab bottom right color="teal">
       <v-icon>mdi-plus</v-icon>
     </v-btn>
   </v-container>
