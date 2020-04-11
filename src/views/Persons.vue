@@ -3,9 +3,8 @@
     <v-row class="mb-6">
       <h1 class="display-3 mx-3">Toutes les personnes</h1>
     </v-row>
-    <v-row>
-      <person-info-card v-bind:person='persons[0]'/>
-      <person-info-card v-bind:person='persons[1]'/>
+    <v-row v-if="ready">
+      <person-info-card v-for="person in persons" :key="person.id" v-bind:person='person'/>
     </v-row>
 
     <v-btn class="ma-5" fixed dark fab bottom right color="teal">
@@ -25,12 +24,14 @@ export default {
   },
   data() {
     return {
-      persons: []
+      persons: [],
+      ready: false
     }
   },
   mounted() {
     axios.get('http://localhost:5000/persons').then(response =>  {
       this.persons = response.data
+      this.ready = true
     })
   }
 };

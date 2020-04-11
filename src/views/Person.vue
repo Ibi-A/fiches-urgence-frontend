@@ -12,12 +12,6 @@
 <script>
 import PersonEditionForm from "../components/PersonEditionForm.vue";
 
-console.log("###########################");
-console.log("###########################");
-console.log(this.$router);
-console.log("###########################");
-console.log("###########################");
-
 export default {
   name: "person",
   components: {
@@ -25,7 +19,7 @@ export default {
   },
   data() {
     return {
-      personId: this.$router.params.id
+      personId: null
     };
   }
 };

@@ -4,7 +4,7 @@
       <v-card-title class="teal--text">{{ person['firstName'] }} {{ person['lastName'] }}</v-card-title>
       <v-card-subtitle>{{ person['address'] }}</v-card-subtitle>
       <v-card-text>
-        <strong>Numéros de téléphone</strong>
+        <strong>Numéro(s) de téléphone</strong>
         <ul>
           <li>(+33) 06.06.06.06.06</li>
           <li>(+33) 06.01.02.03.04</li>
@@ -23,11 +23,13 @@ export default {
   props: {
     'person': Object
   },
+  data() {
+    return {
+      ready: false
+    }
+  },
   methods: {
     switchPage: function() {
-      console.log('##############################')
-      console.log(this.person['id'])
-      console.log('##############################')
       router.replace('/persons/' + this.person['id'])
     }
   }
