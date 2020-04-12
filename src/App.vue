@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer app>
+    <v-navigation-drawer v-model="drawer" app>
       <v-list dense>
         <v-list-item link to="/">
         <v-list-item-icon><v-icon>mdi-home</v-icon></v-list-item-icon>
@@ -47,8 +47,9 @@
     </v-navigation-drawer>
 
     <v-app-bar app class="gradient" dark>
+      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-icon class='mr-3'>mdi-note-multiple</v-icon>
-      <v-toolbar-title>Mes fiches d'urgence</v-toolbar-title>
+      <v-toolbar-title>MES FICHES D'URGENCE</v-toolbar-title>
       <v-spacer></v-spacer>
     </v-app-bar>
 
@@ -60,7 +61,12 @@
 
 <script>
 export default {
-  name: "App"
+  name: "App",
+  data() {
+    return {
+      drawer: null
+    }
+  }
 };
 </script>
 
