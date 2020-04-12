@@ -6,11 +6,16 @@
     <v-text-field label="Numéro de téléphone principal"></v-text-field>
     <v-text-field label="Numéro de téléphone secondaire"></v-text-field>
 
-    <v-item-group>
-      <v-btn color="success" to="/persons/person-id">Modifier</v-btn>
-      <v-btn color="warning" to="/persons/person-id">Annuler</v-btn>
-      <v-btn color="error" to="/persons/person-id">Supprimer</v-btn>
-    </v-item-group>
+
+    <v-btn fab small class="mx-2" color="error" to="/persons/person-id">
+      <v-icon>mdi-account-off</v-icon>
+    </v-btn>
+    <v-btn fab small class="mx-2" color="warning" to="/persons/person-id">
+      <v-icon>mdi-account-cancel</v-icon>
+    </v-btn>
+    <v-btn fab large class="mx-2" color="success" to="/persons/person-id">
+      <v-icon>mdi-account-edit</v-icon>
+    </v-btn>
   </v-form>
 </template>
 

@@ -6,9 +6,11 @@
     <v-text-field label="Numéro de téléphone principal"></v-text-field>
     <v-text-field label="Numéro de téléphone secondaire"></v-text-field>
     
-    <v-item-group>
-      <v-btn color='success'>Valider</v-btn>
-      <v-btn color='warning'>Annuler</v-btn>
-    </v-item-group>
+    <v-btn fab small class="mx-2" color="warning">
+      <v-icon>mdi-account-cancel</v-icon>
+    </v-btn>
+    <v-btn fab large class="mx-2" color="success">
+      <v-icon>mdi-account-plus</v-icon>
+    </v-btn>
   </v-form>
 </template>
