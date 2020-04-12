@@ -7,7 +7,7 @@
       <person-info-card v-for="person in persons" :key="person.id" v-bind:person='person'/>
     </v-row>
 
-    <v-btn class="ma-5" fixed dark fab bottom right color="teal">
+    <v-btn class="ma-5" fixed dark fab bottom right color="success">
       <v-icon>mdi-plus</v-icon>
     </v-btn>
   </v-container>
