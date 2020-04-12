@@ -6,16 +6,21 @@
       <v-textarea label="Adresse" v-bind:value="personId"></v-textarea>
       <v-text-field label="Numéro de téléphone principal"></v-text-field>
       <v-text-field label="Numéro de téléphone secondaire"></v-text-field>
-
-      <v-btn fab small class="mx-2 my-5" color="error" to="/persons/person-id">
-        <v-icon>mdi-account-off</v-icon>
-      </v-btn>
-      <v-btn fab small class="mx-2 my-5" color="warning" to="/persons/person-id">
-        <v-icon>mdi-account-cancel</v-icon>
-      </v-btn>
-      <v-btn fab large class="mx-2 my-5" color="success" to="/persons/person-id">
-        <v-icon>mdi-account-edit</v-icon>
-      </v-btn>
+      <v-row justify="space-between" align="center" class="mx-1">
+        <div>
+          <v-btn fab small class="mx-2 my-5" color="error" to="/persons/person-id">
+            <v-icon>mdi-account-off</v-icon>
+          </v-btn>
+          <v-btn fab small class="mx-2 my-5" color="warning" to="/persons/person-id">
+            <v-icon>mdi-account-cancel</v-icon>
+          </v-btn>
+        </div>
+        <div>
+          <v-btn fab large class="mx-2 my-5" color="success" to="/persons/person-id">
+            <v-icon>mdi-account-edit</v-icon>
+          </v-btn>
+        </div>
+      </v-row>
     </v-form>
   </v-col>
 </template>
@@ -29,3 +34,10 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+</style>
