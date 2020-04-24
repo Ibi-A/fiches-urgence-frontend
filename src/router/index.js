@@ -4,7 +4,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Persons from '../views/Persons.vue'
 import Person from '../views/Person.vue'
-import CitiesList from '../views/CitiesList.vue'
+import Cities from '../views/Cities.vue'
 import Contributors from '../views/Contributors.vue'
 import HealthMutuals from '../views/HealthMutuals.vue'
 import Residents from '../views/Residents.vue'
@@ -31,7 +31,7 @@ const routes = [
   {
     path: '/cities',
     name: 'Cities',
-    component: CitiesList
+    component: Cities
   },
   {
     path: '/contributors',
