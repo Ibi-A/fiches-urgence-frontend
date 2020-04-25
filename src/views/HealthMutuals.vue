@@ -8,20 +8,20 @@
 
     <v-dialog v-model="dialog" max-width="1000">
       <v-card>
-        <health-mutual-creation-form />
+        <health-mutual-edition-form />
       </v-card>
     </v-dialog>
   </v-container>
 </template>
 
 <script>
-import HealthMutualCreationForm from '../components/HealthMutualCreationForm'
+import HealthMutualEditionForm from '../components/HealthMutualEditionForm'
 
 
 export default {
     name: 'health-mutuals',
     components: {
-        HealthMutualCreationForm
+        HealthMutualEditionForm
     },
     data() {
         return {

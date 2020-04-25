@@ -8,20 +8,20 @@
 
     <v-dialog v-model="dialog" max-width="1000">
       <v-card>
-        <city-creation-form />
+        <city-edition-form />
       </v-card>
     </v-dialog>
   </v-container>
 </template>
 
 <script>
-import CityCreationForm from '../components/CityCreationForm'
+import CityEditionForm from '../components/CityEditionForm'
 
 
 export default {
     name: 'cities',
     components: {
-        CityCreationForm
+        CityEditionForm
     },
     data() {
         return {

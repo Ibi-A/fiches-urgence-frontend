@@ -8,20 +8,20 @@
 
     <v-dialog v-model="dialog" max-width="1000">
       <v-card>
-        <contributor-creation-form />
+        <contributor-edition-form />
       </v-card>
     </v-dialog>
   </v-container>
 </template>
 
 <script>
-import ContributorCreationForm from '../components/ContributorCreationForm'
+import ContributorEditionForm from '../components/ContributorEditionForm'
 
 
 export default {
     name: 'contributors',
     components: {
-        ContributorCreationForm
+        ContributorEditionForm
     },
     data() {
         return {
