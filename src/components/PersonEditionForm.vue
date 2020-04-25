@@ -1,5 +1,4 @@
 <template>
-  <v-col xs="12" sm="10" md="8" lg="6" xl="4">
     <v-form>
       <v-text-field label="Prénom(s)" required></v-text-field>
       <v-text-field label="Nom de famille" required></v-text-field>
@@ -22,7 +21,6 @@
         </div>
       </v-row>
     </v-form>
-  </v-col>
 </template>
 
 

@@ -4,7 +4,9 @@
       <h1 class="display-3">Modifier une personne</h1>
     </v-row>
     <v-row>
-      <person-edition-form v-bind:personId="personId" />
+      <v-col xs="12" sm="10" md="8" lg="6" xl="4">
+        <person-edition-form v-bind:personId="personId" />
+      </v-col>
     </v-row>
   </v-container>
 </template>
