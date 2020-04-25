@@ -3,23 +3,23 @@
     <v-container>
       <v-row col="12">
         <v-col xs="12" class="md-4">
-          <v-text-field label="Prénom(s)" required></v-text-field>
+          <v-text-field append-icon="mdi-form-textbox" label="Prénom(s)" required></v-text-field>
         </v-col>
         <v-col xs="12" class="md-4">
-          <v-text-field label="Nom de famille" required></v-text-field>
-        </v-col>
-      </v-row>
-      <v-row>
-        <v-col xs="12" class="md-4">
-          <v-textarea label="Adresse" v-bind:value="personId"></v-textarea>
+          <v-text-field append-icon="mdi-form-textbox" label="Nom de famille" required></v-text-field>
         </v-col>
       </v-row>
       <v-row>
         <v-col xs="12" class="md-4">
-          <v-text-field label="Numéro de téléphone principal"></v-text-field>
+          <v-textarea prepend-icon="mdi-map-marker" label="Adresse" v-bind:value="personId"></v-textarea>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col xs="12" class="md-4">
+          <v-text-field append-icon="mdi-cellphone" label="Numéro de téléphone principal"></v-text-field>
         </v-col>
         <v-col xs="12" class="md-4">
-          <v-text-field label="Numéro de téléphone secondaire"></v-text-field>
+          <v-text-field append-icon="mdi-cellphone" label="Numéro de téléphone secondaire"></v-text-field>
         </v-col>
       </v-row>
       <v-row justify="space-between" align="center" class="mx-1">

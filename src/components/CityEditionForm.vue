@@ -1,7 +1,7 @@
 <template>
   <v-form>
-    <v-text-field label="Nom" required></v-text-field>
-    <v-text-field label="Code postal" required></v-text-field>
+    <v-text-field append-icon="mdi-form-textbox" label="Nom" required></v-text-field>
+    <v-text-field append-icon="mdi-city" label="Code postal" required></v-text-field>
     
     <v-btn fab small class="mx-2" color="warning">
       <v-icon>mdi-cancel</v-icon>
