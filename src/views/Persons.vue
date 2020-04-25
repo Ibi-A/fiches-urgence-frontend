@@ -11,9 +11,12 @@
       <v-icon>mdi-plus</v-icon>
     </v-btn>
 
-    <v-dialog v-model="dialog" max-width="1000">
-      <v-card>
-        <person-edition-form />
+    <v-dialog v-model="dialog" max-width="640" persistent>
+      <v-card class="pa-12">
+        <v-card-title class="headline">Créer une nouvelle personne</v-card-title>
+        <v-card-text>
+          <person-edition-form />
+        </v-card-text>
       </v-card>
     </v-dialog>
   </v-container>

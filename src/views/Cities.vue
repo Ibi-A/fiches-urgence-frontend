@@ -6,27 +6,29 @@
       <v-icon>mdi-plus</v-icon>
     </v-btn>
 
-    <v-dialog v-model="dialog" max-width="1000">
-      <v-card>
-        <city-edition-form />
+    <v-dialog v-model="dialog" max-width="640" persistent>
+      <v-card class="pa-12">
+        <v-card-title>Créer une nouvelle ville</v-card-title>
+        <v-card-text>
+          <city-edition-form />
+        </v-card-text>
       </v-card>
     </v-dialog>
   </v-container>
 </template>
 
 <script>
-import CityEditionForm from '../components/CityEditionForm'
-
+import CityEditionForm from "../components/CityEditionForm";
 
 export default {
-    name: 'cities',
-    components: {
-        CityEditionForm
-    },
-    data() {
-        return {
-            dialog: false
-        }
-    }
-}
+  name: "cities",
+  components: {
+    CityEditionForm
+  },
+  data() {
+    return {
+      dialog: false
+    };
+  }
+};
 </script>

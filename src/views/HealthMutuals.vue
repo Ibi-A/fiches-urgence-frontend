@@ -6,27 +6,29 @@
       <v-icon>mdi-plus</v-icon>
     </v-btn>
 
-    <v-dialog v-model="dialog" max-width="1000">
-      <v-card>
-        <health-mutual-edition-form />
+    <v-dialog v-model="dialog" max-width="640" persistent>
+      <v-card class="pa-12">
+        <v-card-title>Créer une nouvelle mutuelle</v-card-title>
+        <v-card-text>
+          <health-mutual-edition-form />
+        </v-card-text>
       </v-card>
     </v-dialog>
   </v-container>
 </template>
 
 <script>
-import HealthMutualEditionForm from '../components/HealthMutualEditionForm'
-
+import HealthMutualEditionForm from "../components/HealthMutualEditionForm";
 
 export default {
-    name: 'health-mutuals',
-    components: {
-        HealthMutualEditionForm
-    },
-    data() {
-        return {
-            dialog: false
-        }
-    }
-}
+  name: "health-mutuals",
+  components: {
+    HealthMutualEditionForm
+  },
+  data() {
+    return {
+      dialog: false
+    };
+  }
+};
 </script>

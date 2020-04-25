@@ -6,27 +6,29 @@
       <v-icon>mdi-plus</v-icon>
     </v-btn>
 
-    <v-dialog v-model="dialog" max-width="1000">
-      <v-card>
-        <contributor-edition-form />
+    <v-dialog v-model="dialog" max-width="640" persistent>
+      <v-card class="pa-12">
+        <v-card-title>Créer un nouvel intervenant</v-card-title>
+        <v-card-text>
+          <contributor-edition-form />
+        </v-card-text>
       </v-card>
     </v-dialog>
   </v-container>
 </template>
 
 <script>
-import ContributorEditionForm from '../components/ContributorEditionForm'
-
+import ContributorEditionForm from "../components/ContributorEditionForm";
 
 export default {
-    name: 'contributors',
-    components: {
-        ContributorEditionForm
-    },
-    data() {
-        return {
-            dialog: false
-        }
-    }
-}
+  name: "contributors",
+  components: {
+    ContributorEditionForm
+  },
+  data() {
+    return {
+      dialog: false
+    };
+  }
+};
 </script>
